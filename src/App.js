@@ -1,4 +1,5 @@
 import {
+<<<<<<< HEAD
     BrowserRouter,
     Routes,
     Route, Navigate,
@@ -15,6 +16,17 @@ const isAuthenticated = () => {
 const PrivateRoute = ({ element }) => {
     return isAuthenticated() ? element : <Navigate to="/login" />;
 };
+=======
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+//user imports 
+import Home  from './user/home/home';
+import Register from "./user/register";
+import Login from "./user/login";
+
+>>>>>>> origin/master
 function App() {
   return (
       <BrowserRouter>
@@ -22,11 +34,15 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/login" element={<Login/>}/>
+<<<<<<< HEAD
           <Route path="/Dashboard" element={<PrivateRoute element={<Dashboard />} />} />
 
             linna 7ot rout lo5rin
 
             <Route path="*" element={<Navigate to="/" />} />
+=======
+
+>>>>>>> origin/master
         </Routes>
       </BrowserRouter>
   );

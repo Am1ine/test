@@ -1,6 +1,10 @@
 // About.js
 import React from 'react';
+<<<<<<< HEAD
 import './home.css';
+=======
+import './home.css'; // Import the CSS file for this page
+>>>>>>> origin/master
 import { Link } from 'react-router-dom';
 
 const Home = () => {
