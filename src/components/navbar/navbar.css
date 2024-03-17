@@ -1,0 +1,47 @@
+/* Navbar.css */
+
+.navbar {
+   display: flex;
+   justify-content: center; /* Center the navbar content */
+   align-items: center;
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width:100%;
+   z-index: 1000;
+}
+
+.navbar-brand h2 {
+   margin: 0;
+}
+
+.navbar-menu {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+   justify-content: center; /* Center the menu items */
+   width: 600%; /* Ensure the menu takes the full width */
+}
+.navbar-menu button {
+   width: 10%; /* Adjusted width to fit within the form */
+    padding: 5px; /* Increased padding for a larger button */
+    border-radius: 6px; /* Rounded corners for a modern look */
+
+    background-color: #e7ddec;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-menu li a {
+   color: #fff;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+   color: #ddd;
+}
